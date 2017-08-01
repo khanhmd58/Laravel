@@ -152,6 +152,7 @@ class demoValidate extends Controller
           Session::flash('notice_delete','Xóa Thành Công');
           return redirect()->route('getList');
     }
+    
     public function logout(){
       Session::flush();
       return redirect('login');
